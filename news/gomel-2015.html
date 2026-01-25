@@ -660,7 +660,7 @@
 <br>Закончилось ралли победой экипажа Синебок/Вихренко в абсолюте, который на одном из проездов неожиданно вылетел с трассы, "промазав" мимо поворота (видео ниже):
 <br>
 <br> 
-<iframe src="https://web.archive.org/web/20210514073938if_/http://www.youtube.com/embed/dECOSHdjdXQ" height="480" width="640"></iframe>
+<iframe src="https://www.youtube.com/embed/dECOSHdjdXQ" height="480" width="640"></iframe>
 <br>
 <br>Мы неплохо проехали всю гонку, у нас были неплохие времена, и со стороны, по словам зрителей, мы смотрелись также нормально. Такие спецучастки в первую очередь требуют водительского мастерства, и мощность машина на таких допах роль играет значительно меньшую - поэтому от "мощных" лидеров нас отделяло меньше минуты, потому что приходилось петлять и маневрировать на узком допе, прямиков там было немного.
 <br>
@@ -694,11 +694,12 @@
 		<li><a href="../contact.html">Контакты</a></li>
 		
 	</ul>
-	<p>&#169; Copyright &#169; 2015. Alec. All rights reserved</p>
+	<p>&#169; Copyright &#169; 2015-<span class="copyright-year"></span>. Alec. All rights reserved</p>
 </div>
 </div>
 
 <script type="text/javascript">
+	document.querySelector('.copyright-year').textContent = new Date().getFullYear();
 $(function() {
     $('.media').media();
     $('.image-content-cls').magnificPopup({type:'image'});
