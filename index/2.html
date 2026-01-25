@@ -1,0 +1,854 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<base href=".">
+
+<meta charset="UTF-8">
+
+	<title>
+
+Страница 2 - Сайт раллийного экипажа Alec&Vic; Rally Crew</title>
+
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link href="../css/nanogallery.min.css" rel="stylesheet" type="text/css">
+
+<link rel="icon" href="../avicon.ico type="image/x-icon"/>
+<link rel="shortcut icon" href="../avicon.ico type="image/x-icon"/>
+
+<meta name="keywords" content="alec, vic, rally, ралли, экипаж, ушачи, браслав, гомель, гомельщина, гродно, sunday, лепель, 300 lakes rally, toyota, corolla, тойота, королла, форд, грищенков"/>
+<meta name="description" content="Сайт раллийного экипажа Alec&amp;Vic Rally Crew"/>
+
+<!-- AngularJS -->
+
+
+
+
+
+
+
+<!-- JQUERY -->
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="../js/jquery.media.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/jquery.nanogallery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+	
+<!--  -->
+<!-- -->
+
+
+
+<link rel="stylesheet" href="../css/magnific-popup.css">
+
+<style>
+#loginform * {
+	margin: 0px;
+	padding: 0px;
+}
+
+#loginform {
+	width: 550px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	position: relative;
+	padding: 20px;
+	font-family: verdana;
+	display: none;
+}
+
+#mainlogin input {
+	display: block;
+	margin: 0px auto 15px;
+	border-radius: 5px;
+	background: #333333;
+	width: 85%;
+	padding: 12px 20px 12px 10px;
+	border: none;
+	color: #929999;
+	box-shadow: inset 0px 1px 5px #272727;
+	font-size: 0.8em;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin input:focus {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	box-shadow: 0px 0px 5px 1px #161718;
+}
+
+#mainlogin button {
+	background: #ff5f32;
+	border-radius: 50%;
+	border: 10px solid #222526;
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	right: -42px;
+	top: 54px;
+	text-align: center;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover {
+	background: #222526;
+	border-color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button i {
+	font-size: 20px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover i {
+	color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin *:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin ::-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-ms-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 0 0 0;
+}
+
+#note {
+	color: #88887a;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 5px;
+}
+
+#facebook {
+	text-align: center;
+	float: left;
+	background-image: url('images/mini-social-icons.png');
+	background-position: 0px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	padding: 0;
+}
+
+#facebook:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-facebook {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+#twitter {
+	text-align: center;
+	float: left;
+	background-image: url('images/mini-social-icons.png');
+	background-position: 252px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#twitter:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-twitter {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+.fa-arrow-right:before {
+	content: "\f061";
+}
+
+#mainlogin a {
+	color: #88887a;
+	text-decoration: none;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin a:hover {
+	color: #fff;
+	margin-left: 5px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin {
+	float: left;
+	width: 250px;
+	height: 170px;
+	padding: 10px 15px;
+	position: relative;
+	background: #555555;
+	border-radius: 3px;
+}
+
+#connect {
+	font-weight: bold;
+	color: #fff;
+	font-size: 13px;
+	text-align: left;
+	font-family: verdana;
+	padding-top: 10px;
+}
+
+#or {
+	position: absolute;
+	left: -25px;
+	top: 65px; /* 170/2 - 40/2 */
+	background: #222222;
+	text-shadow: 0 2px 0px #121212;
+	color: #999999;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 38px;
+	font-size: 13px;
+}
+
+/** Search  */
+.wrap_superbox {
+	/*width: 410px;
+	margin: 0 auto;*/
+	position: absolute;
+	/*right: 0;*/
+	top: 0;
+}
+
+.superbox_form {
+	/*width: 390px;*/
+	height: 30px;
+	background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -moz-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -ms-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -o-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-color: #151515;
+	background-size: 6px 6px;
+	padding: 10px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: inset 0 25px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+#search_box {
+	/*width: 313px;*/
+	height: 26px;
+	padding-right: 65px;
+	padding-left: 10px;
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNjI2MjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #262626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #262626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#262626', GradientType=0); /* IE6-8 */
+	border: 1px solid #000;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	color: #909090;
+}
+
+#search_box:focus {
+	outline: none;
+}
+
+.superbox_submit {
+	/*width: 63px;*/
+	height: 28px;
+	cursor: pointer;
+	background: #353535; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #353535),
+		color-stop(51%, #1b1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* IE10+ */
+	background: linear-gradient(top, #353535 50%, #1b1b1b 51%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535',
+		endColorstr='#1b1b1b', GradientType=0); /* IE6-8 */
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border: 1px solid #000;
+	color: #fff;
+	/*position: absolute;
+	right: 11px;
+	top: 11px;*/
+}
+
+.superbox_submit:active {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+.superbox_submit:hover {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<div id="fb-root">
+	<!--  -->
+</div>
+<script async="async">
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId : '508259119349951',
+			xfbml : true,
+			version : 'v2.4'
+		});
+	};
+
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {
+			return;
+		}
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://connect.facebook.net/ru_RU/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="page">
+
+<div class="header">
+
+<!-- 
+<div style="position: absolute; top: 0">
+	
+		<button id="loginBtn">Вход</button>
+
+</div>
+ -->
+
+<div class="wrap_superbox">
+	<form id="loginForm" action="2.html" onsubmit="return false;" class="superbox_form">
+
+<!--  -->
+
+		<input id="loginBtn" type="button" value="Вход" class="superbox_submit auth_btn"/>
+	</form>
+</div>
+
+<!-- Search -->
+<div class="wrap_superbox" style="right: 0">
+	
+	<form action="search" method="post" class="superbox_form">
+		<input type="text" id="search_box" value="" name="searchTerm"/> <input type="submit" value="Поиск" class="superbox_submit"/>
+	</form>
+</div>
+<!-- #wrapper -->
+
+<a href="../index.html" id="logo"><img src="../images/logo.png" alt="logo"></a>
+<ul>
+	<li class="selected first_nav" style="width: 48px;"><a href="../index.html" style="margin: 11px 0 0 12px"><img src="../images/home.png"/></a></li>
+	<li><a href="../about.html">О НАС</a> <span>Об
+			экипаже</span></li>
+	<li><a href="../news.html">Новости</a> <span>Гонки и
+			др.</span></li>
+	<li><a href="../gallery.html">Галерея</a> <span>Фото,
+			видео и др.</span></li>
+	<li><a href="../contact.html">Обратная связь</a> <span>Контакты</span></li>
+</ul>
+
+<div id="loginform">
+	<div id="facebook" title="Войти через Facebook">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="fbConncFrm" action="signin/facebook" method="POST">
+				<input type="hidden" name="scope" value="public_profile, email"></input>
+			</form>
+
+		</div>
+	</div>
+	<div id="twitter" title="Войти через Twitter">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="twConncFrm" action="signin/twitter" method="POST">
+			</form>
+		</div>
+	</div>
+	<div id="mainlogin">
+		<div id="or">или</div>
+		<h1>Войти или</h1>
+		<div style="text-align: center; margin-bottom: 5px">
+			<a href="auth/createAccount" style="text-decoration: underline;">зарегистрироваться</a>
+		</div>
+		<form action="auth/login" method="POST" id="mainLoginForm">
+			<input type="text" placeholder="Email" value="" required name="email">
+			<!--  -->
+			<input type="password" placeholder="Пароль" value="" required name="password">
+			<button type="submit">
+				<i class="fa fa-arrow-right"></i>
+			</button>
+		</form>
+		<div id="note">
+			<a href="2.html#" id="forgot_password_link">Забыли пароль?</a>
+		</div>
+	</div>
+</div>
+
+<div class="">
+	<p></p>
+
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$("#facebook").click(function() {
+			$("#fbConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#twitter").click(function() {
+			$("#twConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#exitBtn").click(function() {
+			$("#logoutForm").submit();
+		});
+	});
+	$(function() {
+		$("#loginBtn").click(function() {
+			$("#loginform").dialog({
+				resizable : false,
+				width : 'auto',
+				height : 'auto',
+				modal : true,
+			});
+			$(".ui-dialog-titlebar").css('background', 'none');
+			$(".ui-dialog-titlebar").css('border', 'none');
+			$(".ui-dialog").css('background-color', 'transparent');
+			$(".ui-dialog").css('background-image', 'none');
+			$(".ui-dialog").css('border', 'none');
+			$("#loginform").css('overflow', 'hidden');
+			$("#loginform").css('padding-right', '42px');
+		});
+	});
+	$(function() {
+		$("#profile_link").click(function() {
+			window.location.href = '/profile';
+			return false;
+		});
+	});
+	$(function() {
+		$("#forgot_password_link").click(
+				function() {
+					$("#mainLoginForm").attr("action",
+							"/auth/forgotPasswordPage");
+					$("#mainLoginForm").attr("method", "GET");
+					$("#mainLoginForm").submit();
+				});
+	});
+</script>
+
+	<div class="featured">
+
+<span class=""> <h2 class="rally_ekipazh">Раллийный экипаж Виктора Насыбулина и Олега Котовича</h2> </span>
+
+<p>
+
+<span class=""> Экипаж впервые сформировался в январе 2015 года для участия в 
+<a href="../news/ushachi-2015.html" style="background: none repeat scroll 0 0 rgba(0, 0, 0, 0)" target="_blank">ралли-спринте "Ушачи-2015"</a>, который состоялся 17.01.2015. Мы участвовали тогда экипажем "000" и успешно доехали до финиша без поломок и происшествий. Нам настолько понравилось, что мы приняли решение продолжить участие в этой автоспортивной дисциплине. </span>
+
+		</p>
+		<a href="index/about.html"></a>
+	</div>
+</div>
+
+		<div class="body">
+
+			<div class="sidebar">
+
+<div>
+	<h3>Мы в соцсетях</h3>
+
+	<a href="https://web.archive.org/web/20210514061623/https://www.facebook.com/alecvicrally" id="fb" title="Alec &amp; Vic Rally Crew">fb</a>
+
+	<!--  -->
+	<a id="drive2" href="https://web.archive.org/web/20210514061623/https://www.drive2.ru/users/aleckot/" title="Drive2.ru"><img src="../images/drive2.png"></img></a>
+</div>
+<div>
+	<div>
+		<h3>Машины</h3>
+		<ul>
+
+<span class=""> <li> <h4> <a href="blog/corolla_project" target="_blank">Тойота Королла</a> </h4> <p>Читайте о нашем проекте постройки собственного раллийного автомобиля!<br></p> </li> </span>
+
+<span class=""> <li> <h4> <a href="blog/ford" target="_blank">Форд Эскорт</a> </h4><p>Мы начали выступать на арендном автомобиле.</p></li> </span>
+
+</ul>
+	</div>
+</div>
+<div>
+	<div>
+		<h3>Информация</h3>
+		<ul>
+
+<span class=""> <li> <h4> <a href="https://mc2.by" target="_blank">Наши друзья</a> </h4> <p> "MC<sup>2</sup>" Юрия Грищенкова команда единомышленников!<br></p> </li> </span>
+
+<!-- TODO
+			<li>
+				<h4>
+					<a href="../news.html">Link Title Name</a>
+				</h4>
+				<p>Lorem Ipsum Dolor Sit Amet giberrish samon sanctos. imo.</p>
+			</li>
+			-->
+		</ul>
+	</div>
+</div>
+
+			</div>
+
+			<div class="content">
+
+<h1>Лента</h1>
+<h2>Все новости и материалы</h2>
+
+<!-- 
+<a href="#"><img src="/images/video-player.jpg" alt=""></a>
+ -->
+
+<!-- iframe width="630" height="337"
+	src="http://www.youtube.com/embed/xFhQmyNCRQ4"> </iframe-->
+
+<div class="pinned"><!--  --></div>
+<iframe src="https://drive.google.com/file/d/0BwLa98FuyaQjUThQQ3FfMTFMczQ/preview" width="630" height="337"></iframe>
+
+<span class="videoLabel"> <p style="margin-top:0">Фрагменты ралли-спринтов "Ушачи-2015" и "Гомельщина-2015"</p> </span>
+
+<hr/>
+
+<div style="margin-bottom: 30px" class="feeds_gallery">
+		Добавлена галерея - 18 Feb, 2016
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="gallery/0f2c4d2691e3ea317904f1a3f073168b">
+
+Ралли-спринт "Гомельщина-2016"</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_news">
+		Добавлена новость - 11 Nov, 2015 (14:26)
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="../news/brest-2015.html">
+
+Ралли-спринт "Брест-2015". Сезон закрыт.</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_gallery">
+		Добавлена галерея - 11 Nov, 2015
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="gallery/fe57c2bd358c28249deadaf754780e23">
+
+Ралли-спринт "Брест 2015"</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_news">
+		Добавлена новость - 30 Oct, 2015 (11:30)
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="../news/anons-brest-2015.html">
+
+Анонс ралли-спринта "Брест-2015"</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_news">
+		Добавлена новость - 28 Oct, 2015 (12:04)
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="../news/forest-lakes-2015.html">
+
+Ралли "Лесные озера" 2015. Как это было (взгляд изнутри)</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_user">
+		Зарегистрировался новый пользователь - 23 Sep, 2015
+		<!--  -->
+		<br/>
+		<!--  -->
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_gallery">
+		Добавлена галерея - 15 Sep, 2015
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="gallery/8fd1ad5801c0cb54bf8686db1ab8f9f0">
+
+Ралли-спринт "Лепель 2015"</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_twitter">
+		Новый пользователь зарегистрировался через Twitter - 14 Sep, 2015 (21:33)
+		<!--  -->
+		<br/>
+		<!--  -->
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_news">
+		Добавлена новость - 14 Sep, 2015 (18:21)
+		<!--  -->
+		<br/>
+		<!--  -->
+		
+			<a href="../news/lepel-2015.html">
+
+Ралли-спринт "Лепель-2015"</a>
+
+</div>
+
+<div style="margin-bottom: 30px" class="feeds_user">
+		Зарегистрировался новый пользователь - 14 Sep, 2015
+		<!--  -->
+		<br/>
+		<!--  -->
+
+</div>
+
+<a href="../index.html" style="margin-right: 5px">1</a>
+
+<!--  -->
+
+<span style="margin-right: 5px">2</span>
+
+<!--  -->
+
+<a href="3.html" style="margin-right: 5px">3</a>
+
+<!--  -->
+
+<a href="4.html" style="margin-right: 5px">4</a>
+
+<!--  -->
+
+</div>
+
+		</div>
+
+<div class="footer">
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../about.html">О нас</a></li>
+		<li><a href="../news.html">Новости</a></li>
+		<li><a href="../contact.html">Контакты</a></li>
+		<li>
+			<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+		</li>
+	</ul>
+	<p>&#169; Copyright &#169; 2015. Alec. All rights reserved</p>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$('.media').media();
+		
+		// Add Lightbox
+		 $('.image-content-cls').magnificPopup({type:'image'});
+	});
+</script>
+
+	</div>
+
+
+</body>
+</html>

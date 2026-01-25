@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>„300 Lakes Rally“ (Литва) - Сайт раллийного экипажа Alec&Vic Rally Crew</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link href="../css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/magnific-popup.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+<meta name="keywords" content="300 Lakes Rally, ралли 300 озер Литва, ралли Литва 2016, Чемпионат Беларуси по ралли, ралли Зарасай, ралли Висагинас, международное ралли Литва, раллийные гонки Литва"/>
+<meta name="description" content="„300 Lakes Rally“ (Литва)"/>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="../js/jquery.media.js"></script>
+<script src="../js/jquery.nanogallery.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+#loginform * {
+	margin: 0px;
+	padding: 0px;
+}
+
+#loginform {
+	width: 550px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	position: relative;
+	padding: 20px;
+	font-family: verdana;
+	display: none;
+}
+
+#mainlogin input {
+	display: block;
+	margin: 0px auto 15px;
+	border-radius: 5px;
+	background: #333333;
+	width: 85%;
+	padding: 12px 20px 12px 10px;
+	border: none;
+	color: #929999;
+	box-shadow: inset 0px 1px 5px #272727;
+	font-size: 0.8em;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin input:focus {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	box-shadow: 0px 0px 5px 1px #161718;
+}
+
+#mainlogin button {
+	background: #ff5f32;
+	border-radius: 50%;
+	border: 10px solid #222526;
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	right: -42px;
+	top: 54px;
+	text-align: center;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover {
+	background: #222526;
+	border-color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button i {
+	font-size: 20px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover i {
+	color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin *:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin ::-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-ms-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 0 0 0;
+}
+
+#note {
+	color: #88887a;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 5px;
+}
+
+#facebook {
+	text-align: center;
+	float: left;
+	background-image: url('../images/mini-social-icons.png');
+	background-position: 0px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	padding: 0;
+}
+
+#facebook:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-facebook {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+#twitter {
+	text-align: center;
+	float: left;
+	background-image: url('../images/mini-social-icons.png');
+	background-position: 252px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#twitter:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-twitter {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+.fa-arrow-right:before {
+	content: "\f061";
+}
+
+#mainlogin a {
+	color: #88887a;
+	text-decoration: none;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin a:hover {
+	color: #fff;
+	margin-left: 5px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin {
+	float: left;
+	width: 250px;
+	height: 170px;
+	padding: 10px 15px;
+	position: relative;
+	background: #555555;
+	border-radius: 3px;
+}
+
+#connect {
+	font-weight: bold;
+	color: #fff;
+	font-size: 13px;
+	text-align: left;
+	font-family: verdana;
+	padding-top: 10px;
+}
+
+#or {
+	position: absolute;
+	left: -25px;
+	top: 65px; /* 170/2 - 40/2 */
+	background: #222222;
+	text-shadow: 0 2px 0px #121212;
+	color: #999999;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 38px;
+	font-size: 13px;
+}
+
+/** Search  */
+.wrap_superbox {
+	/*width: 410px;
+	margin: 0 auto;*/
+	position: absolute;
+	/*right: 0;*/
+	top: 0;
+}
+
+.superbox_form {
+	/*width: 390px;*/
+	height: 30px;
+	background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -moz-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -ms-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -o-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-color: #151515;
+	background-size: 6px 6px;
+	padding: 10px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: inset 0 25px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+#search_box {
+	/*width: 313px;*/
+	height: 26px;
+	padding-right: 65px;
+	padding-left: 10px;
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNjI2MjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #262626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #262626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#262626', GradientType=0); /* IE6-8 */
+	border: 1px solid #000;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	color: #909090;
+}
+
+#search_box:focus {
+	outline: none;
+}
+
+.superbox_submit {
+	/*width: 63px;*/
+	height: 28px;
+	cursor: pointer;
+	background: #353535; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #353535),
+		color-stop(51%, #1b1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* IE10+ */
+	background: linear-gradient(top, #353535 50%, #1b1b1b 51%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535',
+		endColorstr='#1b1b1b', GradientType=0); /* IE6-8 */
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border: 1px solid #000;
+	color: #fff;
+	/*position: absolute;
+	right: 11px;
+	top: 11px;*/
+}
+
+.superbox_submit:active {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+.superbox_submit:hover {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+</style>
+</head>
+<body>
+<div class="page">
+<div class="header header-news">
+
+<!-- 
+<div style="position: absolute; top: 0">
+	
+		<button id="loginBtn">Вход</button>
+
+</div>
+ -->
+
+<div class="wrap_superbox">
+	<form id="loginForm" action="index.html" onsubmit="return false;" class="superbox_form">
+
+<!--  -->
+
+		<input id="loginBtn" type="button" value="Вход" class="superbox_submit auth_btn"/>
+	</form>
+</div>
+
+<!-- Search -->
+<div class="wrap_superbox" style="right: 0">
+	
+	<form action="search" method="post" class="superbox_form">
+		<input type="text" id="search_box" value="" name="searchTerm"/> <input type="submit" value="Поиск" class="superbox_submit"/>
+	</form>
+</div>
+<!-- #wrapper -->
+
+<a href="../index.html" id="logo"><img src="../images/logo.png" alt="logo"></a>
+<ul>
+	<li class="selected first_nav" style="width: 48px;"><a href="../index.html" style="margin: 11px 0 0 12px"><img src="../images/home.png"/></a></li>
+	<li><a href="../about.html">О НАС</a> <span>Об
+			экипаже</span></li>
+	<li><a href="../news.html">Новости</a> <span>Гонки и
+			др.</span></li>
+	<li><a href="../gallery.html">Галерея</a> <span>Фото,
+			видео и др.</span></li>
+	<li><a href="../contact.html">Обратная связь</a> <span>Контакты</span></li>
+</ul>
+
+<div id="loginform">
+	<div id="facebook" title="Войти через Facebook">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="fbConncFrm" action="signin/facebook" method="POST">
+				<input type="hidden" name="scope" value="public_profile, email"></input>
+			</form>
+
+		</div>
+	</div>
+	<div id="twitter" title="Войти через Twitter">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="twConncFrm" action="signin/twitter" method="POST">
+			</form>
+		</div>
+	</div>
+	<div id="mainlogin">
+		<div id="or">или</div>
+		<h1>Войти или</h1>
+		<div style="text-align: center; margin-bottom: 5px">
+			<a href="auth/createAccount" style="text-decoration: underline;">зарегистрироваться</a>
+		</div>
+		<form action="auth/login" method="POST" id="mainLoginForm">
+			<input type="text" placeholder="Email" value="" required name="email">
+			<!--  -->
+			<input type="password" placeholder="Пароль" value="" required name="password">
+			<button type="submit">
+				<i class="fa fa-arrow-right"></i>
+			</button>
+		</form>
+		<div id="note">
+			<a href="about.html#" id="forgot_password_link">Забыли пароль?</a>
+		</div>
+	</div>
+</div>
+
+<div class="">
+	<p></p>
+
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$("#facebook").click(function() {
+			$("#fbConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#twitter").click(function() {
+			$("#twConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#exitBtn").click(function() {
+			$("#logoutForm").submit();
+		});
+	});
+	$(function() {
+		$("#loginBtn").click(function() {
+			$("#loginform").dialog({
+				resizable : false,
+				width : 'auto',
+				height : 'auto',
+				modal : true,
+			});
+			$(".ui-dialog-titlebar").css('background', 'none');
+			$(".ui-dialog-titlebar").css('border', 'none');
+			$(".ui-dialog").css('background-color', 'transparent');
+			$(".ui-dialog").css('background-image', 'none');
+			$(".ui-dialog").css('border', 'none');
+			$("#loginform").css('overflow', 'hidden');
+			$("#loginform").css('padding-right', '42px');
+		});
+	});
+	$(function() {
+		$("#profile_link").click(function() {
+			window.location.href = '/profile';
+			return false;
+		});
+	});
+	$(function() {
+		$("#forgot_password_link").click(
+				function() {
+					$("#mainLoginForm").attr("action",
+							"/auth/forgotPasswordPage");
+					$("#mainLoginForm").attr("method", "GET");
+					$("#mainLoginForm").submit();
+				});
+	});
+</script>
+
+	<div>
+
+		<p></p>
+
+		</div>
+
+	<div class="featured" style="background: rgba(0, 0, 0, 0) url('https://lh3.googleusercontent.com/8o470EFOdtteEa1Ss1FdoZ4hAaBsxQ468jo2n72KKl0lXK0gcDkIAq6r-gAEkUn8Xo0-oKYVcxP6yaXUbIchcP6DBFLNNLZRdh6btUit1Lb4n72enz8G5rqZ4iwpFMM0QfaQwcbYD5q0XyNtV2AfYBgJNyNNVNmaHPfUgUUDzyMfRaKopbFjWQlLWA7Te6VkHZsy-dkBll2h4CckKXDyhoE-mI0GWTXgbueywn02UOYZXHdo068VJnkpq-UZkvXHRITzSXX1yVs1E20UMzAiASaBQMwnHWgAYTJHLY47N4rgyrtptBMg7V_siD1FRtmNaP2XCUN9t_FB84evWUg3QF_zB0j9L-6Vrl-p46_QCOy7helGeHSVDTtxxztBOlkmRtwbAGKpc_tLxEzbcB5ArCoEbB9ciemjSIQgW_Hqxwn4J-ys6YkaScdkrL1i33z9DWXBCj4xyMzTlsWO07od_4GOkhL3eayQuU5xeh_bP9oCgPAqWs0iVR-5LwTHbHuz9KTPHfr0rkd4DG-s6WiULUgbo_Q5AFrEBDaEWO2GN8Rc85_z3HsRqD3sTSn34ARYsrJ3levq63A0kKZWdi-nuDw2S7OAsaOoZQZlaKxTGvAcAEgD_EjB=w1281-h951-no') no-repeat scroll right 18px; background-size: 462px 324px;">
+		<h4>Последняя новость:</h4>
+		<h3 style="width:378px">Фотоотчет. Ралли-спринт "Воложин-2017"</h3>
+		<p>Раллийный сезон 2017 официально открыли ралли-спринтом 28 января под Воложином. Опасения, что гонка пересекается с Halls Winter Rally 2017 - не оправдались. То ли родной кубок милее, то ли побаиваются спортсмены Литвы после 300 озер, то ли банальное отсутствие финансирования экипажей.. зато под Воложином собралось 11 боевых и 3 "нулевых" экипажа.Стартовали экипажи в странном порядке: Вторым стартовал №3 Юрий Семенчук на Ford Fiesta, потом №4 Ковалевский на Renault Clio (причем штурманом у Павла в этот раз был Дмитрий Вихренко, недавно вернувшийся с Дакара) - а уже после №2 BMW Никиты Куприенко - свежепостроенный автомобиль из-за объема двигателя "попал" в класс Б-12. В течение гонки вообще все перемешалось из-за сходов, №7 Семенчука-младшего и №10 Цыганкова (который выступал со штурманом Андреем Рудницким) переместились в конец канала.Успешно выступил Иван Русских, который восстановил свой ВАЗ 2108 и чуть было не забрался на II место в абсолюте (лишь 15 секунд штрафа сделали его третьим)На этом фоне Андрею Гринкевичу пришлось довольствоваться 2-м местом в классе Б-10 - из-за разворота, штрафа и локальных сходов он потерял много времени, хотя ехал в своем очень агрессивном фирменном стиле.Команда "МЦ Квадрат" была представлена двумя Ситроенами С2 и Ауди 80 под управлением Юрия Грищенкова. И если Ауди смогла проехать лишь один ДОП, пока не "кончилась" турбина, то Ситроены благополучно доехали до финиша, ограничившись лишь потерей бампера на С2 Мицкевича.СУ-4 был отменен из-за вылета "000" VW Golf Босаревского, и гонщики перемещались в дорожном режиме.Таким образом, до финиша добрались все "боевые" экипажи за исключением Юрия Семенчука на Ford Fiesta, у которого "полетело" сцепление, и он оформил техсход после СУ-1.Итоговые результаты:ССЫЛКА НА ФОТОГАЛЕРЕЮ:https://goo.gl/photos/zc3X2rCpnN2dx5m48"</p>
+		<a href="volozhin-2017-report.html"></a>
+		</div>
+
+</div>
+
+		<div class="body">
+<div class="content">
+
+				<h1 style="line-height: 40px">„300 Lakes Rally“ (Литва)</h1>
+
+				<span>03.08.2016 20:46</span> <span><a href="#">Alec</a></span>
+
+				<!-- 
+				<a href="#"><img
+					src="../cdn/images/300lakes-2016/logo.png" alt="" class="news_teaser_image"></a>
+					 -->
+
+				<div>
+
+					<p><h2>Анонс Ралли "300 Lakes"</h2>
+<div style="margin-top:-50px;width:640px">
+ <a class="image-content-cls" href="../cdn/images/300lakes-2016/logo.png">
+  <img src="../cdn/images/300lakes-2016/logo.png">
+ </a>
+ <br>
+ <br>12-13 августа 2016 года состоится легендарное ралли "300 Lakes" (Литва). Для наших соотечественников, имеющих шенгенские визы и желающих увидеть по-настоящему крутое, интересное европейское ралли, - это отличная возможность! Ралли будет проходить в районе Зарасай-Висагинас, близко к нашей белорусской границе. Вы сможете увидеть большое количество экипажей из Литвы (36), Беларуси (9), России (8), Латвии (5), Эстонии (3), Германии (
+ <strong><span style="color: #FF0000">2 раллийных Трабанта!</span></strong>), совместный экипаж пилота из Саудовской Аравии и штурмана из Финляндии, и по одному экипажу из Польши, Израиля и Голландии.
+ <br>
+ <br>
+ <strong>Ивент совмещает с собой 3-ий выездной этап ЧМ РБ по ралли!</strong>
+ <br>
+ <br>Вся информация:
+ <br>
+ <a target="_blank" class="postlink" href="http://300lakesrally.lt/en">http://300lakesrally.lt/en</a>
+ <br>
+ <br>Список экипажей 
+ <strong>(уже 75!)</strong>: 
+ <br>
+ <a target="_blank" class="postlink" href="http://www.autorally.lt/300LakesRally/">http://www.autorally.lt/300LakesRally/</a> (мы под 64 номером)
+ <br>
+ <br>
+ <font color="red"><b>ОБНОВЛЕНО:</b></font>
+ <br>Видео нашего крэша :(
+ <br>
+ <iframe src="https://www.youtube.com/embed/7L0lcx4sFeI" style="margin-top:10px;margin-bottom:10px" height="480" width="640"></iframe>
+ <br>
+ <br>
+</div>
+<br></p>
+				</div>
+
+				<!-- div class="fb-comments"-->
+				<!--  -->
+				<!-- /div-->
+
+</div>
+</div>
+
+<div class="footer">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">О нас</a></li>
+<li><a href="../news.html">Новости</a></li>
+<li><a href="../contact.html">Контакты</a></li>
+</ul>
+<p>&#169; Copyright &#169; 2015. Alec. All rights reserved</p>
+</div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    $('.media').media();
+    $('.image-content-cls').magnificPopup({type:'image'});
+});
+</script>
+</body>
+</html>

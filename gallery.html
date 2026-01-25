@@ -1,0 +1,1267 @@
+
+
+<!doctype html>
+
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+
+	<title>
+
+Галереи: Фото, видео - Сайт раллийного экипажа Alec&Vic; Rally Crew</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link href="css/nanogallery.min.css" rel="stylesheet" type="text/css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<meta name="keywords" content="alec, vic, rally, ралли, экипаж, ушачи, браслав, гомель, гомельщина, гродно, sunday, лепель, 300 lakes rally, toyota, corolla, тойота, королла, форд, грищенков"/>
+<meta name="description" content="Сайт раллийного экипажа Alec&amp;Vic Rally Crew"/>
+
+<!-- AngularJS -->
+
+
+
+
+
+
+
+<!-- JQUERY -->
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/jquery.media.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.nanogallery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+	
+<!--  -->
+<!-- -->
+
+
+
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<style>
+#loginform * {
+	margin: 0px;
+	padding: 0px;
+}
+
+#loginform {
+	width: 550px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	position: relative;
+	padding: 20px;
+	font-family: verdana;
+	display: none;
+}
+
+#mainlogin input {
+	display: block;
+	margin: 0px auto 15px;
+	border-radius: 5px;
+	background: #333333;
+	width: 85%;
+	padding: 12px 20px 12px 10px;
+	border: none;
+	color: #929999;
+	box-shadow: inset 0px 1px 5px #272727;
+	font-size: 0.8em;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin input:focus {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	box-shadow: 0px 0px 5px 1px #161718;
+}
+
+#mainlogin button {
+	background: #ff5f32;
+	border-radius: 50%;
+	border: 10px solid #222526;
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	right: -42px;
+	top: 54px;
+	text-align: center;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover {
+	background: #222526;
+	border-color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button i {
+	font-size: 20px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin button:hover i {
+	color: #ff5f32;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin *:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin ::-moz-placeholder {
+	color: #929999;
+}
+
+#mainlogin :-ms-input-placeholder {
+	color: #929999;
+}
+
+#mainlogin h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 0 0 0;
+}
+
+#note {
+	color: #88887a;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 5px;
+}
+
+#facebook {
+	text-align: center;
+	float: left;
+	background-image: url('images/mini-social-icons.png');
+	background-position: 0px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+	padding: 0;
+}
+
+#facebook:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-facebook {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+#twitter {
+	text-align: center;
+	float: left;
+	background-image: url('images/mini-social-icons.png');
+	background-position: 252px 168px;
+	padding: 0;
+	width: 84px;
+	height: 84px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 2px #161718;
+	margin-right: 10px;
+	margin-top: 43px; /* 170/2 - 84/2 */
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#twitter:hover {
+	box-shadow: 0px 0px 0px 0px #161718;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fa-twitter {
+	color: #fff;
+	font-size: 7em;
+	display: block;
+}
+
+.fa-arrow-right:before {
+	content: "\f061";
+}
+
+#mainlogin a {
+	color: #88887a;
+	text-decoration: none;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin a:hover {
+	color: #fff;
+	margin-left: 5px;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#mainlogin {
+	float: left;
+	width: 250px;
+	height: 170px;
+	padding: 10px 15px;
+	position: relative;
+	background: #555555;
+	border-radius: 3px;
+}
+
+#connect {
+	font-weight: bold;
+	color: #fff;
+	font-size: 13px;
+	text-align: left;
+	font-family: verdana;
+	padding-top: 10px;
+}
+
+#or {
+	position: absolute;
+	left: -25px;
+	top: 65px; /* 170/2 - 40/2 */
+	background: #222222;
+	text-shadow: 0 2px 0px #121212;
+	color: #999999;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 38px;
+	font-size: 13px;
+}
+
+/** Search  */
+.wrap_superbox {
+	/*width: 410px;
+	margin: 0 auto;*/
+	position: absolute;
+	/*right: 0;*/
+	top: 0;
+}
+
+.superbox_form {
+	/*width: 390px;*/
+	height: 30px;
+	background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -webkit-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -moz-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -ms-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-image: -o-repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05)
+		0%, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%);
+	background-color: #151515;
+	background-size: 6px 6px;
+	padding: 10px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: inset 0 25px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+#search_box {
+	/*width: 313px;*/
+	height: 26px;
+	padding-right: 65px;
+	padding-left: 10px;
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNjI2MjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #262626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #262626 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #262626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#262626', GradientType=0); /* IE6-8 */
+	border: 1px solid #000;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 2px 0
+		rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	color: #909090;
+}
+
+#search_box:focus {
+	outline: none;
+}
+
+.superbox_submit {
+	/*width: 63px;*/
+	height: 28px;
+	cursor: pointer;
+	background: #353535; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #353535),
+		color-stop(51%, #1b1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #353535 50%, #1b1b1b 51%);
+	/* IE10+ */
+	background: linear-gradient(top, #353535 50%, #1b1b1b 51%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535',
+		endColorstr='#1b1b1b', GradientType=0); /* IE6-8 */
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border: 1px solid #000;
+	color: #fff;
+	/*position: absolute;
+	right: 11px;
+	top: 11px;*/
+}
+
+.superbox_submit:active {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+.superbox_submit:hover {
+	background: #1b1b1b; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFiMWIxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1b1b1b),
+		color-stop(100%, #353535)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1b1b1b 0%, #353535 100%);
+	/* IE10+ */
+	background: linear-gradient(top, #1b1b1b 0%, #353535 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b',
+		endColorstr='#353535', GradientType=0);
+} /* IE6-8 */
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+<style type="text/css">
+.body div.sidebar {
+	margin: 0;
+}
+
+.body div.content {
+	width: 720px; /* 690 + 60 - 15 - 15 */
+	margin: 0 15px 0 15px;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="fb-root">
+	<!--  -->
+</div>
+<script async="async">
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId : '508259119349951',
+			xfbml : true,
+			version : 'v2.4'
+		});
+	};
+
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {
+			return;
+		}
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://connect.facebook.net/ru_RU/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="page">
+
+<div class="header">
+
+<!-- 
+<div style="position: absolute; top: 0">
+	
+		<button id="loginBtn">Вход</button>
+
+</div>
+ -->
+
+<div class="wrap_superbox">
+	<form id="loginForm" action="gallery.html" onsubmit="return false;" class="superbox_form">
+
+<!--  -->
+
+		<input id="loginBtn" type="button" value="Вход" class="superbox_submit auth_btn"/>
+	</form>
+</div>
+
+<!-- Search -->
+<div class="wrap_superbox" style="right: 0">
+	
+	<form action="search" method="post" class="superbox_form">
+		<input type="text" id="search_box" value="" name="searchTerm"/> <input type="submit" value="Поиск" class="superbox_submit"/>
+	</form>
+</div>
+<!-- #wrapper -->
+
+<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+<ul>
+	<li class="selected first_nav" style="width: 48px;"><a href="index.html" style="margin: 11px 0 0 12px"><img src="images/home.png"/></a></li>
+	<li><a href="about.html">О НАС</a> <span>Об
+			экипаже</span></li>
+	<li><a href="news.html">Новости</a> <span>Гонки и
+			др.</span></li>
+	<li><a href="gallery.html">Галерея</a> <span>Фото,
+			видео и др.</span></li>
+	<li><a href="contact.html">Обратная связь</a> <span>Контакты</span></li>
+</ul>
+
+<div id="loginform">
+	<div id="facebook" title="Войти через Facebook">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="fbConncFrm" action="signin/facebook" method="POST">
+				<input type="hidden" name="scope" value="public_profile, email"></input>
+			</form>
+
+		</div>
+	</div>
+	<div id="twitter" title="Войти через Twitter">
+		<i class="fa"></i>
+		<div id="connect">
+			<form id="twConncFrm" action="signin/twitter" method="POST">
+			</form>
+		</div>
+	</div>
+	<div id="mainlogin">
+		<div id="or">или</div>
+		<h1>Войти или</h1>
+		<div style="text-align: center; margin-bottom: 5px">
+			<a href="auth/createAccount" style="text-decoration: underline;">зарегистрироваться</a>
+		</div>
+		<form action="auth/login" method="POST" id="mainLoginForm">
+			<input type="text" placeholder="Email" value="" required name="email">
+			<!--  -->
+			<input type="password" placeholder="Пароль" value="" required name="password">
+			<button type="submit">
+				<i class="fa fa-arrow-right"></i>
+			</button>
+		</form>
+		<div id="note">
+			<a href="gallery.html#" id="forgot_password_link">Забыли пароль?</a>
+		</div>
+	</div>
+</div>
+
+<div class="">
+	<p></p>
+
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$("#facebook").click(function() {
+			$("#fbConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#twitter").click(function() {
+			$("#twConncFrm").submit();
+		});
+	});
+	$(function() {
+		$("#exitBtn").click(function() {
+			$("#logoutForm").submit();
+		});
+	});
+	$(function() {
+		$("#loginBtn").click(function() {
+			$("#loginform").dialog({
+				resizable : false,
+				width : 'auto',
+				height : 'auto',
+				modal : true,
+			});
+			$(".ui-dialog-titlebar").css('background', 'none');
+			$(".ui-dialog-titlebar").css('border', 'none');
+			$(".ui-dialog").css('background-color', 'transparent');
+			$(".ui-dialog").css('background-image', 'none');
+			$(".ui-dialog").css('border', 'none');
+			$("#loginform").css('overflow', 'hidden');
+			$("#loginform").css('padding-right', '42px');
+		});
+	});
+	$(function() {
+		$("#profile_link").click(function() {
+			window.location.href = '/profile';
+			return false;
+		});
+	});
+	$(function() {
+		$("#forgot_password_link").click(
+				function() {
+					$("#mainLoginForm").attr("action",
+							"/auth/forgotPasswordPage");
+					$("#mainLoginForm").attr("method", "GET");
+					$("#mainLoginForm").submit();
+				});
+	});
+</script>
+
+	<div>
+
+		<p></p>
+
+	</div>
+</div>
+
+		<div class="body">
+
+			<div class="sidebar">
+
+<div>
+	<h3>Мы в соцсетях</h3>
+
+	<a href="https://web.archive.org/web/20210514075101/https://www.facebook.com/alecvicrally" id="fb" title="Alec &amp; Vic Rally Crew">fb</a>
+
+	<!--  -->
+	<a id="drive2" href="https://web.archive.org/web/20210514075101/https://www.drive2.ru/users/aleckot/" title="Drive2.ru"><img src="images/drive2.png"></img></a>
+</div>
+<div>
+	<div>
+		<h3>Машины</h3>
+		<ul>
+
+<span class=""> <li> <h4> <a href="blog/corolla_project" target="_blank">Тойота Королла</a> </h4> <p>Читайте о нашем проекте постройки собственного раллийного автомобиля!<br></p> </li> </span>
+
+<span class=""> <li> <h4> <a href="blog/ford" target="_blank">Форд Эскорт</a> </h4><p>Мы начали выступать на арендном автомобиле.</p></li> </span>
+
+</ul>
+	</div>
+</div>
+<div>
+	<div>
+		<h3>Информация</h3>
+		<ul>
+
+<span class=""> <li> <h4> <a href="https://mc2.by" target="_blank">Наши друзья</a> </h4> <p> "MC<sup>2</sup>" Юрия Грищенкова команда единомышленников!<br></p> </li> </span>
+
+<!-- TODO
+			<li>
+				<h4>
+					<a href="news.html">Link Title Name</a>
+				</h4>
+				<p>Lorem Ipsum Dolor Sit Amet giberrish samon sanctos. imo.</p>
+			</li>
+			-->
+		</ul>
+	</div>
+</div>
+
+			</div>
+
+			<div class="content">
+
+<h2>Фото</h2>
+
+<div id="nanoGallery">
+
+<!-- All Galleries -->
+
+<!-- Album pic -->
+			<a href="cdn/images/pskov2016/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/01_thumb.jpg" data-ngdesc="14.07.2016" data-ngkind="album" data-ngid="d458af8068e5333518b1cd13fa9d0dfe"> Ралли Псковской области "900 озёр" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/01_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/02.JPG" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/02_thumb.JPG" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/03.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/03_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/04.JPG" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/04_thumb.JPG" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/05.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/05_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/06.JPG" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/06_thumb.JPG" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/07.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/07_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/08.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/08_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/09.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/09_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/10.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/10_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/11.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/11_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/pskov2016/gal/12.jpg" data-ngthumb="http://avrc.by:80/cdn/images/pskov2016/gal/12_thumb.jpg" data-ngdesc="" data-ngalbumid="d458af8068e5333518b1cd13fa9d0dfe"></a>
+
+<!-- Album pic -->
+			<a href="cdn/images/gomel2016/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/01_thumb.jpg" data-ngdesc="18.02.2016" data-ngkind="album" data-ngid="0f2c4d2691e3ea317904f1a3f073168b"> Ралли-спринт "Гомельщина-2016" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/01_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/02.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/02_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/03.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/03_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/04.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/04_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/05.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/05_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/06.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/06_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/07.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/07_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/08.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/08_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/09.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/09_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/10.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/10_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/11.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/11_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/12.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/12_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/13.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/13_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2016/gal/14.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2016/gal/14_thumb.jpg" data-ngdesc="" data-ngalbumid="0f2c4d2691e3ea317904f1a3f073168b"></a>
+
+<!-- Album pic -->
+			<a href="cdn/images/brest2015/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/01_thumb.jpg" data-ngdesc="11.11.2015" data-ngkind="album" data-ngid="fe57c2bd358c28249deadaf754780e23"> Ралли-спринт "Брест 2015" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/01_thumb.jpg" data-ngdesc="BrestCITY.com" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/02.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/02_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/03.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/03_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/04.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/04_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/05.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/05_thumb.jpg" data-ngdesc="virtualbrest.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/06.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/06_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/07.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/07_thumb.jpg" data-ngdesc="dealerhall.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/08.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/08_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/09.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/09_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/10.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/10_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/11.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/11_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/12.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/12_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/13.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/13_thumb.jpg" data-ngdesc="ROADRUNNER'S (ZOOMER)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/14.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/14_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/16.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/16_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/17.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/17_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/18.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/18_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/19.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/19_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/20.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/20_thumb.jpg" data-ngdesc="ROADRUNNER'S (EUGENE)" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/28.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/28_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/brest2015/gal/29.jpg" data-ngthumb="http://avrc.by:80/cdn/images/brest2015/gal/29_thumb.jpg" data-ngdesc="Rally2.by" data-ngalbumid="fe57c2bd358c28249deadaf754780e23">Фото</a>
+
+<!-- Album pic -->
+			<a href="cdn/images/lepel2015/gal/5303.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/5303_thumb.jpg" data-ngdesc="15.09.2015" data-ngkind="album" data-ngid="8fd1ad5801c0cb54bf8686db1ab8f9f0"> Ралли-спринт "Лепель 2015" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/corolla_edet_v_lepel.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/corolla_edet_v_lepel_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/corolla1.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/corolla1_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0236.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0236_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0265.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0265_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0406.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0406_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0479.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0479_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0511.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0511_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0665.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0665_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0915.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0915_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0919.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0919_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_1091.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_1091_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_1094.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_1094_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/6QqV7DhXQ0k.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/6QqV7DhXQ0k_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/BkjMMvzeubQ.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/BkjMMvzeubQ_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/Ces_ZUifI-c.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/Ces_ZUifI-c_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/Df8F5X90om8.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/Df8F5X90om8_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/WnzgjTF9gQg.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/WnzgjTF9gQg_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/qb06Uw5cEHI.jpg" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/qb06Uw5cEHI_thumb.jpg" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_0671.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_0671_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_1169.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_1169_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/lepel2015/gal/IMG_1174.JPG" data-ngthumb="http://avrc.by:80/cdn/images/lepel2015/gal/IMG_1174_thumb.JPG" data-ngdesc="" data-ngalbumid="8fd1ad5801c0cb54bf8686db1ab8f9f0"></a>
+
+<!-- Album pic -->
+			<a href="cdn/images/grodno2015/00HoGt8I_Ps.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/00HoGt8I_Ps_thumb.jpg" data-ngdesc="18.07.2015" data-ngkind="album" data-ngid="d8df88afd89924c8e0eb25bc5a61755e"> Ралли-спринт "Гродно 2015" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/00HoGt8I_Ps.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/00HoGt8I_Ps_thumb.jpg" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/Gnu2d4PcHMo.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/Gnu2d4PcHMo_thumb.jpg" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/IMG_5045.JPG" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/IMG_5045_thumb.JPG" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/IMG_5150.JPG" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/IMG_5150_thumb.JPG" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/or6o7iIy0Hk.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/or6o7iIy0Hk_thumb.jpg" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/PpjipoXwQB0.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/PpjipoXwQB0_thumb.jpg" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/IMG_5153.JPG" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/IMG_5153_thumb.JPG" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/IMG_5504.JPG" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/IMG_5504_thumb.JPG" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/IMG_5506.JPG" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/IMG_5506_thumb.JPG" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/grodno2015/Uo96YeDY40E.jpg" data-ngthumb="http://avrc.by:80/cdn/images/grodno2015/Uo96YeDY40E_thumb.jpg" data-ngdesc="" data-ngalbumid="d8df88afd89924c8e0eb25bc5a61755e"></a>
+
+<!-- Album pic -->
+			<a href="cdn/images/braslav2015/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/01_thumb.jpg" data-ngdesc="02.05.2015" data-ngkind="album" data-ngid="325501e320dccc458e4d02b450dbe111"> Браслав Ралли 2015 </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/braslav2015/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/01_thumb.jpg" data-ngdesc="" data-ngalbumid="325501e320dccc458e4d02b450dbe111"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/braslav2015/gal/02.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/02_thumb.jpg" data-ngdesc="" data-ngalbumid="325501e320dccc458e4d02b450dbe111"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/braslav2015/gal/03.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/03_thumb.jpg" data-ngdesc="" data-ngalbumid="325501e320dccc458e4d02b450dbe111"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/braslav2015/gal/04.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/04_thumb.jpg" data-ngdesc="" data-ngalbumid="325501e320dccc458e4d02b450dbe111"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/braslav2015/gal/05.jpg" data-ngthumb="http://avrc.by:80/cdn/images/braslav2015/gal/05_thumb.jpg" data-ngdesc="Пилот" data-ngalbumid="325501e320dccc458e4d02b450dbe111">Vic</a>
+
+<!-- Album pic -->
+			<a href="cdn/images/gomel2015/gal/105.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/105_thumb.jpg" data-ngdesc="28.02.2015" data-ngkind="album" data-ngid="447366884d0c7f1b1cfb7f07d1a2eeb1"> Ралли-спринт "Гомельщина" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/101.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/101_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/102.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/102_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/103.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/103_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/104.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/104_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/106.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/106_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/107.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/107_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/108.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/108_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/109.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/109_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/110.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/110_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/111.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/111_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/112.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/112_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/113.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/113_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/114.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/114_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/115.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/115_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/116.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/116_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/117.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/117_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/118.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/118_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/119.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/119_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/120.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/120_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/121.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/121_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/122.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/122_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/123.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/123_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/gomel2015/gal/124.jpg" data-ngthumb="http://avrc.by:80/cdn/images/gomel2015/gal/124_thumb.jpg" data-ngdesc="" data-ngalbumid="447366884d0c7f1b1cfb7f07d1a2eeb1"></a>
+
+<!-- Album pic -->
+			<a href="cdn/images/ushachi2015/gal/00.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/00_thumb.jpg" data-ngdesc="17.01.2015" data-ngkind="album" data-ngid="6aa1550993a488cee7f495ac681fb0c3"> Ралли-спринт "Ушачи 2015" </a>
+
+<!-- Skip 1st album pic -->
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/00.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/00_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/01.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/01_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/02.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/02_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/03.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/03_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/04.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/04_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/05.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/05_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/06.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/06_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Skip 1st album pic -->
+
+<a href="cdn/images/ushachi2015/gal/07.jpg" data-ngthumb="http://avrc.by:80/cdn/images/ushachi2015/gal/07_thumb.jpg" data-ngdesc="" data-ngalbumid="6aa1550993a488cee7f495ac681fb0c3"></a>
+
+<!-- Separate gallery -->
+
+</div>
+
+<!-- All Galleries -->
+
+Вы можете комментировать галереи. Выберите галерею из списка ссылок ниже:
+		<br/>
+
+<a href="gallery/d458af8068e5333518b1cd13fa9d0dfe">Ралли Псковской области "900 озёр"</a>
+		<br/>
+
+<a href="gallery/0f2c4d2691e3ea317904f1a3f073168b">Ралли-спринт "Гомельщина-2016"</a>
+		<br/>
+
+<a href="gallery/fe57c2bd358c28249deadaf754780e23">Ралли-спринт "Брест 2015"</a>
+		<br/>
+
+<a href="gallery/8fd1ad5801c0cb54bf8686db1ab8f9f0">Ралли-спринт "Лепель 2015"</a>
+		<br/>
+
+<a href="gallery/d8df88afd89924c8e0eb25bc5a61755e">Ралли-спринт "Гродно 2015"</a>
+		<br/>
+
+<a href="gallery/325501e320dccc458e4d02b450dbe111">Браслав Ралли 2015</a>
+		<br/>
+
+<a href="gallery/447366884d0c7f1b1cfb7f07d1a2eeb1">Ралли-спринт "Гомельщина"</a>
+		<br/>
+
+<a href="gallery/6aa1550993a488cee7f495ac681fb0c3">Ралли-спринт "Ушачи 2015"</a>
+		<br/>
+
+<script type="text/javascript" async="async">
+	$(document).ready(function() {
+		$("#nanoGallery").nanoGallery({
+			/*			thumbnailWidth : 'auto',
+			 thumbnailHeight : 100,
+			 locationHash : false,
+			 */
+			thumbnailWidth : 'auto',
+			thumbnailHoverEffect : 'borderLighter,imageScale150',
+			//itemsBaseURL : 'https://web.archive.org/web/20210514075101/http://avrc.by:80',
+			breadcrumbAutoHideTopLevel : true
+		});
+	});
+</script>
+
+			</div>
+
+		</div>
+
+<div class="footer">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">О нас</a></li>
+		<li><a href="news.html">Новости</a></li>
+		<li><a href="contact.html">Контакты</a></li>
+		<li>
+			<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+		</li>
+	</ul>
+	<p>&#169; Copyright &#169; 2015. Alec. All rights reserved</p>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$('.media').media();
+		
+		// Add Lightbox
+		 $('.image-content-cls').magnificPopup({type:'image'});
+	});
+</script>
+
+</div>
+</body>
+</html>
