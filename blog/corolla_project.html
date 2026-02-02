@@ -1,17 +1,14 @@
-
-
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-
 
 <meta charset="UTF-8">
 
 	<title>
 
-Галереи: Фото, видео - Сайт раллийного экипажа Alec&Vic; Rally Crew</title>
+Блог - Королла - Сайт раллийного экипажа Alec&Vic; Rally Crew</title>
 
+ 
 <link rel="stylesheet" href="../css/style.css" type="text/css">
 <link href="../css/nanogallery.min.css" rel="stylesheet" type="text/css">
 
@@ -22,31 +19,30 @@
 <meta name="description" content="Сайт раллийного экипажа Alec&amp;Vic Rally Crew"/>
 
 <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
-
-
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js">
+	
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js">
+	
+</script>
+<script src="../js/firebase.js"></script>
+<script src="../js/angularfire.min.js"></script>
 
 <!-- JQUERY -->
-
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 <script src="../js/jquery.media.js"></script>
-<script src="../js/jquery.magnific-popup.min.js"></script>
-<script src="../js/jquery.nanogallery.min.js"></script>
+
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 	
 <!--  -->
-<!-- -->
+<!-- <script src="//js/jquery.magnific-popup.min.js"></script>-->
 
-
+<script src="../js/jquery.magnific-popup.min.js"></script>
 
 <link rel="stylesheet" href="../css/magnific-popup.css">
 
@@ -458,23 +454,10 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-
-
-<style type="text/css">
-.body div.sidebar {
-	margin: 0;
-}
-
-.body div.content {
-	width: 720px; /* 690 + 60 - 15 - 15 */
-	margin: 0 15px 0 15px;
-}
-</style>
-
 </head>
 <body>
 
-	<div id="fb-root">
+<div id="fb-root">
 	<!--  -->
 </div>
 <script async="async">
@@ -506,14 +489,17 @@
 <div style="position: absolute; top: 0">
 	
 		<button id="loginBtn">Вход</button>
+	
 
+	
 </div>
  -->
 
 <div class="wrap_superbox">
-	<form id="loginForm" action="../gallery.html" onsubmit="return false;" class="superbox_form">
+	<form id="loginForm" action="" onsubmit="return false;" class="superbox_form">
 
-<!--  -->
+		
+		<!--  -->
 
 		<input id="loginBtn" type="button" value="Вход" class="superbox_submit auth_btn"/>
 	</form>
@@ -522,7 +508,7 @@
 <!-- Search -->
 <div class="wrap_superbox" style="right: 0">
 	
-	<form action="search" method="post" class="superbox_form">
+	<form action="../search.html" method="post" class="superbox_form">
 		<input type="text" id="search_box" value="" name="searchTerm"/> <input type="submit" value="Поиск" class="superbox_submit"/>
 	</form>
 </div>
@@ -544,11 +530,13 @@
 	Этот сайт заархивирован и больше не поддерживается!
 </div>
 
+</div>
+
 <div id="loginform">
 	<div id="facebook" title="Войти через Facebook">
 		<i class="fa"></i>
 		<div id="connect">
-			<form id="fbConncFrm" action="signin/facebook" method="POST">
+			<form id="fbConncFrm" action="../signin/facebook" method="POST">
 				<input type="hidden" name="scope" value="public_profile, email"></input>
 			</form>
 
@@ -557,7 +545,7 @@
 	<div id="twitter" title="Войти через Twitter">
 		<i class="fa"></i>
 		<div id="connect">
-			<form id="twConncFrm" action="signin/twitter" method="POST">
+			<form id="twConncFrm" action="../signin/twitter" method="POST">
 			</form>
 		</div>
 	</div>
@@ -565,9 +553,9 @@
 		<div id="or">или</div>
 		<h1>Войти или</h1>
 		<div style="text-align: center; margin-bottom: 5px">
-			<a href="auth/createAccount" style="text-decoration: underline;">зарегистрироваться</a>
+			<a href="../auth/createAccount" style="text-decoration: underline;">зарегистрироваться</a>
 		</div>
-		<form action="auth/login" method="POST" id="mainLoginForm">
+		<form action="../auth/login" method="POST" id="mainLoginForm">
 			<input type="text" placeholder="Email" value="" required name="email">
 			<!--  -->
 			<input type="password" placeholder="Пароль" value="" required name="password">
@@ -576,7 +564,7 @@
 			</button>
 		</form>
 		<div id="note">
-			<a href="gallery.html#" id="forgot_password_link">Забыли пароль?</a>
+			<a href="#" id="forgot_password_link">Забыли пароль?</a>
 		</div>
 	</div>
 </div>
@@ -641,11 +629,12 @@
 		<p></p>
 
 	</div>
-</div>
 
-		<div class="body">
+	<div class="body">
 
 			<div class="sidebar">
+
+				
 
 <div>
 	<h3>Мы в соцсетях</h3>
@@ -660,11 +649,15 @@
 		<h3>Машины</h3>
 		<ul>
 
+			
+
 <span class=""> <li> <h4> <a href="../blog/corolla_project.html" target="_blank">Тойота Королла</a> </h4> <p>Читайте о нашем проекте постройки собственного раллийного автомобиля!<br></p> </li> </span>
+
+			
 
 <span class=""> <li> <h4> <a href="../blog/ford.html" target="_blank">Форд Эскорт</a> </h4><p>Мы начали выступать на арендном автомобиле.</p></li> </span>
 
-</ul>
+		</ul>
 	</div>
 </div>
 <div>
@@ -672,12 +665,14 @@
 		<h3>Информация</h3>
 		<ul>
 
-<span class=""> <li> <h4> <a href="https://mc2.by" target="_blank">Наши друзья</a> </h4> <p> "MC<sup>2</sup>" Юрия Грищенкова команда единомышленников!<br></p> </li> </span>
+			
 
-<!-- TODO
+<span class=""> <li> <h4> <a href="http://mc2.by/" target="_blank">Наши друзья</a> </h4> <p> "MC<sup>2</sup>" Юрия Грищенкова команда единомышленников!<br></p> </li> </span>
+
+			<!-- TODO
 			<li>
 				<h4>
-					<a href="../news.html">Link Title Name</a>
+					<a href="news.html">Link Title Name</a>
 				</h4>
 				<p>Lorem Ipsum Dolor Sit Amet giberrish samon sanctos. imo.</p>
 			</li>
@@ -688,127 +683,123 @@
 
 			</div>
 
-			<div class="content">
-
-<h2>Ралли-спринт "Гомельщина-2016"</h2>
-
-
-<div class="gallery-tiles">
-  <div class="gallery-tile" data-image-num="01">
-    <a href="../cdn/images/gomel2016/gal/01.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/01.jpg" data-thumb="../cdn/images/gomel2016/gal/01_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/01_thumb.jpg" alt="Image 01" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="02">
-    <a href="../cdn/images/gomel2016/gal/02.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/02.jpg" data-thumb="../cdn/images/gomel2016/gal/02_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/02_thumb.jpg" alt="Image 02" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="03">
-    <a href="../cdn/images/gomel2016/gal/03.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/03.jpg" data-thumb="../cdn/images/gomel2016/gal/03_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/03_thumb.jpg" alt="Image 03" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="04">
-    <a href="../cdn/images/gomel2016/gal/04.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/04.jpg" data-thumb="../cdn/images/gomel2016/gal/04_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/04_thumb.jpg" alt="Image 04" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="05">
-    <a href="../cdn/images/gomel2016/gal/05.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/05.jpg" data-thumb="../cdn/images/gomel2016/gal/05_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/05_thumb.jpg" alt="Image 05" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="06">
-    <a href="../cdn/images/gomel2016/gal/06.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/06.jpg" data-thumb="../cdn/images/gomel2016/gal/06_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/06_thumb.jpg" alt="Image 06" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="07">
-    <a href="../cdn/images/gomel2016/gal/07.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/07.jpg" data-thumb="../cdn/images/gomel2016/gal/07_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/07_thumb.jpg" alt="Image 07" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="08">
-    <a href="../cdn/images/gomel2016/gal/08.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/08.jpg" data-thumb="../cdn/images/gomel2016/gal/08_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/08_thumb.jpg" alt="Image 08" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="09">
-    <a href="../cdn/images/gomel2016/gal/09.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/09.jpg" data-thumb="../cdn/images/gomel2016/gal/09_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/09_thumb.jpg" alt="Image 09" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="10">
-    <a href="../cdn/images/gomel2016/gal/10.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/10.jpg" data-thumb="../cdn/images/gomel2016/gal/10_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/10_thumb.jpg" alt="Image 10" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="11">
-    <a href="../cdn/images/gomel2016/gal/11.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/11.jpg" data-thumb="../cdn/images/gomel2016/gal/11_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/11_thumb.jpg" alt="Image 11" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="12">
-    <a href="../cdn/images/gomel2016/gal/12.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/12.jpg" data-thumb="../cdn/images/gomel2016/gal/12_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/12_thumb.jpg" alt="Image 12" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="13">
-    <a href="../cdn/images/gomel2016/gal/13.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/13.jpg" data-thumb="../cdn/images/gomel2016/gal/13_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/13_thumb.jpg" alt="Image 13" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
-  <div class="gallery-tile" data-image-num="14">
-    <a href="../cdn/images/gomel2016/gal/14.jpg" class="gallery-image-link" data-full="../cdn/images/gomel2016/gal/14.jpg" data-thumb="../cdn/images/gomel2016/gal/14_thumb.jpg">
-      <img src="../cdn/images/gomel2016/gal/14_thumb.jpg" alt="Image 14" class="gallery-thumb" onerror="if(!this.dataset.triedFull) { this.dataset.triedFull='1'; this.src = this.src.replace('_thumb', ''); } else { this.onerror=null; this.src = '../images/empty.png'; this.classList.add('placeholder'); }" />
-    </a>
-  </div>
+			<div class="content blog"><h1>Тойота Королла</h1>Проект постройки собственного раллийного автомобиля начался с покупки в марте 2015 абсолютно обычной гражданской Тойоты Короллы G6R 1998 года. G6R - значит "приспортивленная" версия Короллы с объемом 1.6, 6МКПП и более жесткой и низкой подвеской:
+<br>
+<br>
+<a class="image-content-cls" href="images/corolla_01.jpg">
+ <img src="images/corolla_01.jpg" width="320">
+</a>
+<br>
+<br>Машина содержала в себе много кастомного тюнинга и стайлинга, который мы решительно удалили, и отправили машину "каркаситься" в Литву. Через две недели каркас был готов!
+<br>
+<br>
+<a class="image-content-cls" href="images/corolla_02.jpg">
+ <img src="images/corolla_02.jpg" width="318">
+</a>
+<a class="image-content-cls" href="images/corolla_03.jpg">
+ <img src="images/corolla_03.jpg" width="318">
+</a>
+<br>
+<br>Также мы покрасили Короллу изнутри, и выглядела она как просто "скорлупа" с каркасом, изнутри всё доставалось, и красилось всё белым!
+<br>Была сделана антикоррозийная обработка всего днища, арок, скрытых полостей.
+<br>
+<br>
+<a class="image-content-cls" href="images/corolla_03_01.jpg">
+ <img src="images/corolla_03_01.jpg" width="450">
+</a>
+<br>
+<br>
+<b>Мотор</b>
+<br>Двигатель (1.6 4A-FE) мы менять изначально не собирались, но потом начали искать 4A-GE во Владивостоке. Решили - купили! Двигатель доставили с поврежденными "мозгами" и насосом ГУРа. В остальном двигатель оказался очень неплохим, с небольшим пробегом и отсечкой за пределами тахометра!
+<br>
+<br>
+<a class="image-content-cls" href="images/corolla_04.jpg">
+ <img src="images/corolla_04.jpg" width="450">
+</a>
+<br>
+<br>Компрессию проверили во Владике. По приезду мотор был интегрирован в Короллу взамен предыдущего.
+<br>Были заменены также провода, помпа, свечи, ремни, сальники. Купили и установили алюминиевый радиатор большего объема, спортивный термостат и масляный кулер.
+<br>
+<br>
+<b>МКПП</b>
+<br>Коробка C-160 ушла в ребилд, были заменены изношенные детали, куплена и интегрирована блокировка Торсен. Пришлось покупать маховик, так как предыдущий не подходил к новому мотору по креплениям. Также приобрели сцепление AISIN.
+<br>
+<br>
+<b>Подвеска</b>
+<br>Эпопея с подвеской длилась долго. Мы выбрали койловеры K-SPORT, заказывали подвеску в Германии, а производилась она в Тайване. Про процесс покупки, многочисленные созвоны, согласования и ожидания, отправку, доставку не очень приятно вспоминать, но в итоге - вот она - у нас и установлена!
+<br>
+<br>
+<a class="image-content-cls" href="images/corolla_05.jpg">
+ <img src="images/corolla_05.jpg" width="318">
+</a>
+<a class="image-content-cls" href="images/corolla_06.jpg">
+ <img src="images/corolla_06.jpg" width="318">
+</a>
+<br>
+<br>Подушки двигателя, рычаги - закатали в полиуретан. Ход штоков на отбой был отрегулирован, как и жесткость.
+<br>
+<br>
+<b>Тормоза</b>
+<br>Был проведен ребилд суппортов, установлены новые хорошие диски и колодки, заменен ремкомплект всех тормозных механизмов. 
+<br>Под гидравлический ручник была протрассирована магистраль, вварена площадка под ручник, чтобы он всегда был под рукой пилота.
+<br>
+<br>
+<b>Стекла, дверные карты, защита, аккумулятор<br></b>Стекла были заменены на поликарбонатные, врезаны пластиковые форточки. Изготовлены дверные карты. Установлены замки капота и багажника.
+<br>Защита двигателя была изготовлена из листа дюралюминия 4". 
+<br>Защита бака изготавливалась из листа полиэтилена.
+<br>Аккумулятор расположился сзади для лучшей развесовки. Вообще старались облегчить машину по максимуму! С полным баком распределение нагрузки получилось 60% / 40%.
+<br>
+<br>
+<b>Интерьер</b>
+<br>Установлены огнетушители спереди в соответствии с регламентом. 
+<br>Установлены новые омологированные сиденья и ремни производства 2015 года.
+<br>Установлена переговорка с постоянным питанием (не от батарейки)
+<br>Для онбордов присутствует система, аналогичная GoPro.
+<br>Панель подвергнута флокированию.
+<br>
+<br>
+<br>В результате машина собрана, ездит и готовится к предстоящим гонкам:
+<br>
+<br>
+<div style="width: 640px; overflow: hidden;">
+<a class="image-content-cls" href="images/corolla_front_left.jpg" style="float: left; margin-right: 4px; margin-bottom: 4px;">
+ <img src="images/corolla_front_left.jpg" width="318">
+</a>
+<a class="image-content-cls" href="images/corolla_rear_left.jpg" style="float: left; margin-bottom: 4px;">
+ <img src="images/corolla_rear_left.jpg" width="318">
+</a>
+<a class="image-content-cls" href="images/corolla_front_right.jpg" style="float: left; margin-right: 4px; clear: left;">
+ <img src="images/corolla_front_right.jpg" width="318">
+</a>
+<a class="image-content-cls" href="images/corolla_rear_right.jpg" style="float: left;">
+ <img src="images/corolla_rear_right.jpg" width="318">
+</a>
 </div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  // Initialize Magnific Popup for gallery images
-  $(".gallery-image-link").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true
-    },
-    image: {
-      titleSrc: function(item) {
-        return "Image " + item.el.closest(".gallery-tile").attr("data-image-num");
-      }
-    }
-  });
-});
-</script>
+<br>
+<br>За развитием нашего проекта можно следить на 
+<a href="http://www.drive2.ru/r/toyota/1219288/" target="_blank">Drive2.ru</a>
+<br>
 
 			</div>
+	</div>
 
-		</div>
 <div class="footer">
-	<ul>
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="../about.html">О нас</a></li>
-		<li><a href="../news.html">Новости</a></li>
-		<li><a href="../contact.html">Контакты</a></li>
-		<li>
-			<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
-		</li>
-	</ul>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">О нас</a></li>
+<li><a href="../news.html">Новости</a></li>
+<li><a href="../contact.html">Контакты</a></li>
+</ul>
 	<p>&#169; Copyright &#169; 2015-<span class="copyright-year"></span>. Alec. All rights reserved</p>
+</div>
 </div>
 
 <script type="text/javascript">
-	$(function() {
-		$('.media').media();
-		
-		// Add Lightbox
-		 $('.image-content-cls').magnificPopup({type:'image'});
-	});
 	document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+$(function() {
+    $('.media').media();
+    $('.image-content-cls').magnificPopup({type:'image'});
+});
 </script>
-
-	</div>
 </body>
 </html>
